@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Profile_team_1</title>
+</head>
+
+<body>
+    <div id="root" class="w-full h-full bg-[#000] flex justify-center font-rubik">
+        <div class="w-full md:w-[65%] bg-[#DADADA] flex">
+            <div class="w-[70px] md:w-[144px] text-[#DADADA] bg-[#000] relative">
+                <div class="-rotate-90 absolute bottom-[42%] w-[560px] left-[-240px] text-[60px] font-extrabold">
+                    THE ALPHA TEAM
+                </div>
+            </div>
+            <div class="m-[40px]">
+                <div class="slider w-full">
+                    <img class="object-fill max-w-[100%] w-full h-[256px] rounded-[12px]" src="./asset/bg2.jpg"
+                        alt="photo">
+                </div>
+                <div class="slogan text-[30px] font-bold text-[#E30613] text-center py-[24px]">Big jobs can be smaller
+                    together
+                </div>
+                <div class="w-full max-w-[100%]">
+                    <div class="text-[24px] font-semibold">I-About</div>
+                    <div class="w-full text-[18px]">Well come to our team, we are <span
+                            class="underline decoration-dotted font-semibold text-[#E30613]">AlphaTeam</span>. As
+                        you can see, our
+                        slogan
+                        is `Big jobs can be smaller together`
+                        ,so that we allways make an effort to work together and release for you guys the best
+                        products.
+                    </div>
+                    <ul class="list-decimal">
+                        <p class="text-[20px] font-semibold">
+                            We absolutely adhere the following rules:
+                        </p>
+                        <li class="text-[18px] ml-[32px]">Find Angle Plugin in Figma Community and instal it. Free
+                            version is
+                            enough to make mockups.</li>
+                        <li class="text-[18px] ml-[32px]">After you have ﬁnished, ﬁnd Screen layer group on sceane.</li>
+                        <li class="text-[18px] ml-[32px]">Select ‘YOUR DESIGN HERE’ layer and open a Angle Plugin.</li>
+                        <li class="text-[18px] ml-[32px]">Chose your design, click pixel density on 3x and hit apply.
+                        </li>
+                        <li class="text-[18px] ml-[32px]">Angle Plugin updates your design in the main scene.</li>
+
+                    </ul>
+                    <div class="text-[24px] font-semibold">II-Over view</div>
+                    <div class="flex">
+                        <div class="">
+                            <ul class="list-disc">
+                                <p class="text-[20px] font-semibold">
+                                    Includes:
+                                </p>
+                                <li class="text-[18px] ml-[32px]">6 members with repo gitHub</li>
+                                <li class="text-[18px] ml-[32px]">6 private profiles</li>
+                                <li class="text-[18px] ml-[32px]">1 profile group <a
+                                        class="text-[10px] font-bold text-[#E30613]" href="/">HERE</a></li>
+                                <li class="text-[18px] ml-[32px]">1 present documentaions <a
+                                        class="text-[10px] font-bold text-[#E30613]" href="#">HERE</a></li>
+                                <li class="text-[18px] ml-[32px]">1 application use REST_API <a
+                                        class="text-[10px] font-bold text-[#E30613]" href="#">HERE</a></li>
+                                <li class="text-[18px] ml-[32px]">Skill member alalytics <span
+                                        class="text-[10px] font-bold text-[#E30613]">Above</span></li>
+                            </ul>
+                        </div>
+                        <div class=" hidden md:relative w-1/2">
+                            <img class="rotate-[10deg] w-[100px] absolute top-[-7px] right-[158px] rounded-[4px]"
+                                src="./asset/git-hub.avif" alt="git">
+                            <img class="w-[200px] absolute top-[-20px] right-[-90px] rounded-[4px]"
+                                src="./asset/react.avif" alt="node">
+                            <img class=" w-[100px] absolute top-[76px] right-[193px] rounded-[50%]"
+                                src="./asset/nodejs.png" alt="node">
+                            <img class="w-[150px] absolute top-[139px] right-[-10px] rounded-[4px]"
+                                src="./asset/server-side.avif" alt="node">
+                        </div>
+                    </div>
+                    <div class="text-[24px] font-semibold">III-Members & alalytics</div>
+                    <span class="text-[8px] font-bold text-[#E30613]">Select above for more informations</span>
+                    <div
+                        class="flex overflow-x-auto justify-center bg-[#0d660dd1] py-[16px] px-[12px] rounded-[12px] mt-[24px]">
+                        <img onclick={handleChange(0)}
+                            class="mx-[1%] cursor-pointer rounded-[50%] w-[15%] h-[60px] md:h-[100px] border-4 border-[#d8d756]"
+                            src="./asset/user1.webp" alt="users">
+                        <img onclick={handleChange(1)}
+                            class="mx-[1%] cursor-pointer rounded-[50%] w-[15%] h-[60px] md:h-[100px] border-4 border-[#d8d756]"
+                            src="./asset/user2.jpeg" alt="users">
+                        <img onclick={handleChange(2)}
+                            class="mx-[1%] cursor-pointer rounded-[50%] w-[15%] h-[60px] md:h-[100px] border-4 border-[#d8d756]"
+                            src="./asset/user3.jpeg" alt="users">
+                        <img onclick={handleChange(3)}
+                            class="mx-[1%] cursor-pointer rounded-[50%] w-[15%] h-[60px] md:h-[100px] border-4 border-[#d8d756]"
+                            src="./asset/user4.webp" alt="users">
+                        <img onclick={handleChange(4)}
+                            class="mx-[1%] cursor-pointer rounded-[50%] w-[15%] h-[60px] md:h-[100px] border-4 border-[#d8d756]"
+                            src="./asset/user5.webp" alt="users">
+                        <img onclick={handleChange(5)}
+                            class="mx-[1%] cursor-pointer rounded-[50%] w-[15%] h-[60px] md:h-[100px] border-4 border-[#d8d756]"
+                            src="./asset/user6.webp" alt="users">
+                    </div>
+                    <div id="alalytic" class="bg-[#d8d756] p-[24px] mt-[32px] rounded-[12px]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
